@@ -1,10 +1,14 @@
 body {
-  font-family: Arial, sans-serif;
-  /*background-image: url('../img/bgd_2.jpg');*/
+  font-family: 'Roboto', sans-serif;
+  background-image: url('../img/img_2.png');
   background-size: cover;
   background-position: center;
   margin: 0;
   padding: 0;
+}
+
+.match-container{
+  margin-top: 150px;
 }
 
 .next-match-title {
@@ -18,41 +22,60 @@ body {
 }
 
 .next-match {
-  background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
-  color: white;
+  /*background-color: rgba(0, 0, 0, 0.7); !* Black with 70% opacity *!*/
+
   padding: 1rem; /* Adjusted padding for Bootstrap spacing */
   border-radius: 0.5rem; /* Rounded corners */
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Shadow */
+  /*box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); !* Shadow *!*/
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  color: black;
+
 }
 
 .team-logo {
-  width: 150px;
+  width: 100%;
+  max-width: 250px; /* Adjust this max-width as needed */
   height: auto;
+
 }
 
 .vs {
-  font-size: 1.5rem;
+  font-size: 6rem;
   margin: 0 20px;
   font-weight: bold;
+  color: #faf9f9;
+  font-family: "Baloo Paaji 2", sans-serif;
+  text-shadow: 2px 4px 8px rgba(255,255,255,0.86);
+
 }
 
 .match-date {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  color: #ffffff;
+  max-font-size: 1.5rem;
+  text-decoration: underline 1px;
+
+}
+
+.match-time{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #68e143;
+  max-font-size: 1.5rem;
+
 }
 
 .stadium-name {
-  color: #cccccc;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  font-family: "Baloo Paaji 2", sans-serif;
+  font-style: italic;
 }
 
-.book-now-btn {
-  background-color: #002691;
-  color: white;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
+
 
 .book-now-btn:hover {
   background-color: #00e100;
@@ -66,4 +89,72 @@ body {
 
 .team-score {
   font-size: 3rem;
+}
+
+
+.vs-text {
+  margin: 0 20px;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  text-shadow:
+    3px 3px 0px rgba(0, 0, 0, 0.2),
+    6px 6px 0px rgba(0, 0, 0, 0.2),
+    9px 9px 0px rgba(0, 0, 0, 0.2),
+    12px 12px 0px rgba(0, 0, 0, 0.2),
+    15px 15px 0px rgba(0, 0, 0, 0.2);
+
+}
+.img-std{
+  width: 250px;
+  border-radius: 10%;
+  margin-right: 10px;
+  box-shadow: 1px 1px 0.5rem rgba(255, 255, 255, 1);
+
+}
+
+
+.result-score{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Publico Text", sans-serif;
+
+}
+.btn-booknow{
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #00e100;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-booknow:hover{
+  background-color: #00b300;
+  color: #ffffff;
+  border: none;
+}
+
+
+@media (max-width: 768px) {
+  .team-logo {
+    max-width: 150px; /* Smaller size on smaller screens */
+  }
+
+  .vs {
+    font-size: 50px;
+  }
+
+  .match-date {
+    font-size: 15px;
+  }
+
+  .match-time {
+    font-size: 1.2rem;
+  }
 }
